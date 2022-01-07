@@ -548,7 +548,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.397);
   padding-bottom: 15px;
 }
-.post__header .post-like-history {
+.post-like-history {
   display: flex;
   align-items: center;
 }
@@ -727,6 +727,10 @@ body {
 .box-top .post-like-button i {
   font-size: 23px;
   color: black;
+}
+.box-top img{
+  width: 20px;
+  border-radius: 50%;
 }
 
 
@@ -954,6 +958,15 @@ i.far.fa-thumbs-up {
   justify-content: space-between;
   padding: 10px 0px;
   border-bottom: 1px solid #e0dfdc;
+}
+.post-like-history a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.post-like-history img{
+  margin-right: 5px;
 }
 
 .comment-input {
