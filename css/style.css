@@ -774,6 +774,13 @@ body {
   align-items: center;
 }
 
+.follow{
+  width: 15%;
+}
+.follow i{
+  padding-right: 4px;
+}
+
 .img-name {
   display: flex;
   justify-content: space-between;
@@ -793,7 +800,7 @@ body {
 .post-comment-image > img {
   width: 50px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .comment-name-details > h3 {
