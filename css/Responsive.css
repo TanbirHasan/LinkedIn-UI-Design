@@ -203,14 +203,15 @@
   width: 80px;
 
 }
+
 .details-container {
-  width: 60%;
-  position: absolute;
+  width: 55%;
+  position: fixed;
   border-radius: 10px;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.294);
-  top: 20%;
-  left: 37%;
+  top: 40%;
+  left: 42%;
   display: flex;
   flex-direction: column;
   background-color: white;
