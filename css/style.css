@@ -540,6 +540,8 @@ body{
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+
+
   padding: 5px;
 }
 
@@ -631,7 +633,7 @@ body{
 }
 .post__body__top .post-body-text .post-body-text-header p strong>a{
   text-decoration: none;
-  color: blacks;
+  color: black;
 }
 .post__body__top .post-body-text .post-body-text-header p:nth-of-type(2) {
   padding-right: 5px;
@@ -1862,6 +1864,7 @@ textarea{
  .inner-details .text p {
   text-decoration: none;
   font-size: 12px;
+  color: gray;
   margin: 0px!important;
 }
 .inner-details .text p:nth-of-type(1){
