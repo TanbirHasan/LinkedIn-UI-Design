@@ -1,16 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lobster&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400&family=Yeseva+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
+body{
+  position: relative;
+ 
+}
 
-body {
+#innerbody {
   background-color: #f3f2ef;
   display: flex;
   flex-direction: column;
+  z-index: -3;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 #moreText {
   display: none;
@@ -411,6 +419,7 @@ body {
   background-color: white;
   padding: 10px;
   padding-bottom: 20px;
+  position: relative;
   border-radius: 10px;
   margin-bottom: 5px;
 }
@@ -431,6 +440,19 @@ body {
   width: 100%;
   padding: 10px;
   color: gray;
+  padding-left: 15px;
+}
+.feed__input form input:nth-of-type(1){
+  background-color: transparent;
+}
+.feed__input:hover {
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  color: gray;
+  background-color: rgba(128, 128, 128, 0.178);
   padding-left: 15px;
 }
 
@@ -1213,7 +1235,9 @@ button#dots:hover {
 }
 
 .replay-name-details > h3 {
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
 }
 
 .replay-name-details > p {
@@ -1521,7 +1545,7 @@ img.items-img-company {
   justify-content: center;
   outline: 1px solid #ebebeb;
   position: absolute;
-  top: -90px;
+  top: -105px;
   z-index: 1;
   background-color: #fff;
   padding: 10px;
@@ -1551,3 +1575,162 @@ img.items-img-company {
 /* End */
 
 /* right */
+
+
+
+/* share post style */
+.overlay{
+  position: absolute;
+}
+
+
+.sharepost {
+  padding: 20px;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  z-index: 10;
+  position: absolute;
+  flex-direction: column;
+  width: 90%;
+  top: -23%;
+  left: 2%;
+  border-radius: 10px;
+  background-color: white;
+}
+.sharepost .inner-post-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.sharepost .inner-post-header .cross{
+  width: 30px;
+}
+
+.sharepost .inner-post-header .fa-times{
+  max-width: 100%;
+  font-size: 22px;
+  padding:5px 10px;
+  border-radius: 100%;
+}
+.inner-post-header h3{
+  color: black;
+}
+.sharepost .inner-post-header .fa-times:hover{
+  padding:5px 10px;
+  background-color: rgb(207, 207, 207);
+  border-radius: 100%;
+  transition: 1s;
+}
+.sharepost .inner-post-middle{
+  display: flex;
+  margin-top: 8px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.inner-post-middle .Anyone span{
+  margin-right: 5px;
+}
+.inner-post-middle .Anyone:hover{
+  font-weight: bold;
+  outline: 2px solid #5e5e5e;
+  background-color: #ebebeb;
+}
+
+.name{
+  position: relative;
+}
+.name .Anyone{
+  position: absolute;
+  border: none;
+  transform: translate(0px,5px);
+  outline: 1px solid #5e5e5e;
+}
+.name p{
+  margin: 0px;
+}
+
+
+
+
+.Anyone{
+  padding: 5px 11px;
+  border-radius: 20px;
+  border: none;
+}
+.sharepost .inner-post-middle img{
+  max-width:50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+textarea{
+  width: 100%;
+  border:none;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.hashtag{
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: 600;
+  columns: skyblue;
+  margin-bottom: 10px;
+  padding: 6px;
+
+}
+
+.hashtag:hover{
+  background-color: rgba(27, 89, 151, 0.212);
+}
+
+.inner-post-footer{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner-post-footer .icon{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inner-post-footer .icon ul{
+  display: flex;
+  padding: 0px;
+}
+
+.inner-post-footer .icon ul>li{
+  list-style: none;
+  margin-left: 15px;
+}
+.inner-post-footer .icon ul>li:nth-of-type(1){
+  list-style: none;
+  margin-left: 0px;
+}
+.Anyone-bottom{
+
+  margin-left: 12px;
+  color: rgb(77, 77, 77);
+  padding: 6px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.Anyone-bottom span{
+  margin-right: 5px;
+}
+.Anyone-bottom:hover{
+  border-radius: 20px;
+  padding: 6px;
+  background-color: rgba(128, 128, 128, 0.397);
+  transition: 1s;
+}
+
+.footer-post{
+  text-decoration: none;
+}

@@ -7,29 +7,29 @@ seeMore = () => {
   dotbtn.style.display = "none";
 };
 
-var y = document.getElementById("privacy-up");
-var x = document.getElementById("privacy-down");
-var z = document.getElementById("privacy-drop-down");
-y.style.display = "none";
-z.style.visibility = "hidden";
+var up = document.getElementById("privacy-up");
+var down = document.getElementById("privacy-down");
+var dropdown = document.getElementById("privacy-drop-down");
+up.style.display = "none";
+dropdown.style.visibility = "hidden";
 
 privacyArrowDown = () => {
-  if (x.style.display != "none") {
-    x.style.display = "none";
-    y.style.display = "inline-block";
-    z.style.visibility = "visible";
+  if (down.style.display != "none") {
+    down.style.display = "none";
+    up.style.display = "inline-block";
+    dropdown.style.visibility = "visible";
   } else {
-    x.style.display = "inline-block";
+    down.style.display = "inline-block";
   }
 };
 
 privacyArrowup = () => {
-  if (y.style.display != "none") {
-    y.style.display = "none";
-    z.style.visibility = "hidden";
-    x.style.display = "inline-block";
+  if (up.style.display != "none") {
+    up.style.display = "none";
+    dropdown.style.visibility = "hidden";
+    down.style.display = "inline-block";
   } else {
-    y.style.display = "inline-block";
+    up.style.display = "inline-block";
   }
 };
 
@@ -48,18 +48,41 @@ profileNav = () => {
     dropNav.style.display = "none";
   }
 };
-var smallDropNav = document.getElementById("profile-small-nav");
-smallDropNav.style.display = "none";
-var NavSmallProfileDetails = false;
-profileSmallNav = () => {
-  if (NavSmallProfileDetails === false) {
-    NavSmallProfileDetails = true;
-  } else {
-    NavSmallProfileDetails = false;
-  }
-  if (NavSmallProfileDetails === true) {
-    smallDropNav.style.display = "block";
-  } else {
-    smallDropNav.style.display = "none";
-  }
-};
+
+
+
+
+
+// style for sharenavsection 
+
+
+var sharepost = document.getElementsByClassName("sharepost");
+sharepost.style.display = "none";
+
+
+
+
+
+
+function postshare(){
+  var post = document.getElementById("sharepost");
+  post.style.display = "block";
+  var overlay = document.getElementById("overlay");
+  var innerbody = document.getElementById("innerbody")
+  overlay.style.backgroundColor = "rgba(0, 0, 0, 0.205)"
+  overlay.style.zIndex = "1000"
+  overlay.style.position = "absoulate";
+  overlay.style.height = "100%";
+  overlay.style.width = "100%";
+  overlay.style.top = "0%";
+  overlay.style.left = "0%";
+  innerbody.style.zIndex = "-1"
+}
+
+var crossbutton = document.getElementById("cross");
+
+function buttonclicked(){
+  var post = document.getElementById("sharepost");
+  post.style.display = "none";
+  
+}
