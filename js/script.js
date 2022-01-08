@@ -86,3 +86,22 @@ function buttonclicked(){
   post.style.display = "none";
   
 }
+
+
+
+
+
+
+
+
+
+function showdetails(){
+  var details = document.getElementById("details");
+  console.log("button clicked");
+  details.classList.toggle("show");
+
+
+
+}
+
+
