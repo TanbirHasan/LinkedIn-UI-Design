@@ -516,7 +516,9 @@ body{
   color: #ffc0cb;
 }
 
-
+.post{
+  position: relative;
+}
 
 .post .inputOption i{
   color: gray!important;
@@ -772,6 +774,7 @@ body{
 
 /* style for comment section */
 .comment-item {
+  position: relative;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -1756,39 +1759,93 @@ textarea{
 .details{
   display: none;
 }
+.detailstwo{
+  display: none;
+}
+.detailsthree{
+  display: none;
+}
+.detailsfour{
+  display: none;
+}
 .details.show {
+  display: block !important;
+  z-index: 2;
+}
+.detailstwo.show {
+  display: block !important;
+  z-index: 2;
+}
+.detailsthree.show {
+  display: block !important;
+  z-index: 2;
+}
+.detailsfour.show {
   display: block !important;
   z-index: 2;
 }
 
 .details-container {
-  width: 25%;
-  position: fixed;
+  width: 55%;
+  position: absolute;
   border-radius: 10px;
+  left: 45%;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.294);
-  top: 45%;
-  left: 42%;
   display: flex;
   flex-direction: column;
   background-color: white;
 }
-.details-container .inner-details {
+
+.detailstwo-container {
+  width: 55%;
+  position: absolute;
+  border-radius: 10px;
+  left: 45%;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.detailsthree-container {
+  width: 55%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 10;
+  left: 45%;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.detailsfour-container {
+  width: 55%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 10;
+  left: 45%;
+  border: 1px solid rgba(0, 0, 0, 0.294);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+ .inner-details {
   display: flex;
   flex-grow: 1;
-
   max-width: 100%;
   padding: 5px;
   flex-shrink: 1;
   margin: 8px;
   align-items: center;
 }
-.details-container .inner-details:hover{
+.inner-details:hover{
   background-color: rgba(128, 128, 128, 0.424);
 }
-.details-container .inner-details span {
+ .inner-details span {
   font-size: 25px;
   width: 30px;
+  margin-right: 6px;
 }
 
 .details .inner-details .text{
@@ -1797,17 +1854,21 @@ textarea{
   
 }
 
-.details-container .inner-details .text a{
+.inner-details .text a{
   color: black;
   text-decoration: none;
+  font-weight: 600;
 }
-.details-container .inner-details .text p {
+ .inner-details .text p {
   text-decoration: none;
   font-size: 12px;
   margin: 0px!important;
 }
+.inner-details .text p:nth-of-type(1){
+  font-weight: 600;
+}
 
-.details-container .inner-details .text a:nth-of-type(1){
+ .inner-details .text a:nth-of-type(1){
   font-weight: 600;
 
 }

@@ -105,3 +105,29 @@ function showdetails(){
 }
 
 
+
+function showdetailstwo(){
+  var detailstwo = document.getElementById("detailstwo");
+  console.log("button clicked");
+  detailstwo.classList.toggle("show");
+}
+
+
+
+function showdetailsthree(){
+  var detailsthree = document.getElementById("detailsthree");
+  console.log("button clicked");
+  detailsthree.classList.toggle("show");
+}
+
+
+
+function showdetailsfour(){
+  var detailsfour = document.getElementById("detailsfour");
+  console.log("button clicked");
+  detailsfour.classList.toggle("show");
+}
+
+
+
+
